@@ -10,7 +10,9 @@ It is a compact dark-fantasy dungeon crawler in the spirit of classic ARPGs: mov
 
 ## Live production demo
 
-**Production URL:** _pending Vercel deployment_
+**Production URL:** https://emberfall-lowpoly-arpg.vercel.app
+
+**GitHub repository:** https://github.com/carlomigueldy/emberfall-lowpoly-arpg
 
 ## Highlights
 

@@ -2,7 +2,25 @@
   "name": "emberfall-lowpoly-arpg",
   "version": "0.1.0",
   "private": true,
-  "description": "Emberfall: a stylized low-poly isometric action RPG inspired by dark fantasy dungeon crawlers, built with Three.js.",
+  "description": "Emberfall: a stylized low-poly isometric browser ARPG with warm ember-lit dungeons, combat, loot, leveling, boss fight, and mobile controls.",
+  "homepage": "https://emberfall-lowpoly-arpg.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlomigueldy/emberfall-lowpoly-arpg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/carlomigueldy/emberfall-lowpoly-arpg/issues"
+  },
+  "keywords": [
+    "threejs",
+    "vite",
+    "typescript",
+    "webgl",
+    "game",
+    "arpg",
+    "low-poly",
+    "browser-game"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
