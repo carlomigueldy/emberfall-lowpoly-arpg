@@ -5,6 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#12080a" />
     <title>Emberfall: Ashen Crown — Low Poly ARPG</title>
+
+    <style>
+      .site-attribution {
+        position: fixed;
+        right: max(12px, env(safe-area-inset-right));
+        bottom: max(12px, env(safe-area-inset-bottom));
+        z-index: 2147483647;
+        display: inline-flex;
+        align-items: center;
+        padding: 0.48rem 0.72rem;
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        border-radius: 999px;
+        background: rgba(8, 10, 18, 0.72);
+        color: #fff;
+        font: 700 12px/1.1 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.26);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        pointer-events: auto;
+      }
+
+      .site-attribution:hover,
+      .site-attribution:focus-visible {
+        transform: translateY(-1px);
+        background: rgba(16, 20, 34, 0.86);
+        outline: 2px solid rgba(255, 255, 255, 0.36);
+        outline-offset: 2px;
+      }
+
+      @media (max-width: 640px) {
+        .site-attribution {
+          right: max(10px, env(safe-area-inset-right));
+          bottom: max(10px, env(safe-area-inset-bottom));
+          padding: 0.42rem 0.62rem;
+          font-size: 11px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="app">
@@ -64,6 +104,14 @@
         </div>
       </div>
     </div>
+
+    <a
+      class="site-attribution"
+      href="https://carlomigueldy.dev"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visit carlomigueldy.dev"
+    >carlomigueldy.dev</a>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
