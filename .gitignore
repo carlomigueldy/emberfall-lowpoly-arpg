@@ -1,0 +1,33 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# production build output
+dist/
+
+# local env / secrets
+.env
+.env.*
+!.env.example
+
+# Vercel local metadata and deployment/OIDC env
+.vercel/
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# local caches
+.cache/
+.parcel-cache/
+coverage/
+node_modules/.vite/

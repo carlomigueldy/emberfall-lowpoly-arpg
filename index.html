@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#12080a" />
+    <title>Emberfall: Ashen Crown — Low Poly ARPG</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="game-canvas" aria-label="Emberfall game canvas"></canvas>
+      <div id="vignette"></div>
+      <section id="hud" aria-label="Game HUD">
+        <header class="topbar">
+          <div class="brand">
+            <span class="sigil">◆</span>
+            <div>
+              <h1>Emberfall</h1>
+              <p>Ashen Crown</p>
+            </div>
+          </div>
+          <div class="bars">
+            <div class="bar health"><span id="health-fill"></span><b id="health-label">120 / 120</b></div>
+            <div class="bar mana"><span id="mana-fill"></span><b id="mana-label">70 / 70</b></div>
+            <div class="bar xp"><span id="xp-fill"></span><b id="xp-label">Level 1</b></div>
+          </div>
+          <div class="resources">
+            <span id="gold-label">0 gold</span>
+            <span id="objective-label">Break the Ashen Crown</span>
+          </div>
+        </header>
+        <aside class="codex">
+          <h2>Quest</h2>
+          <p id="quest-copy">Cleanse the ember crypt, collect relic gold, and defeat the Cinder Matriarch.</p>
+          <ul id="quest-list">
+            <li>WASD / arrows to move</li>
+            <li>Click ground to path, click foes or Space to slash</li>
+            <li>Q Nova · E Dash · R Potion</li>
+          </ul>
+        </aside>
+        <canvas id="minimap" width="180" height="180" aria-label="Minimap"></canvas>
+        <div id="combat-log" aria-live="polite"></div>
+        <div id="skillbar" aria-label="Abilities">
+          <button class="skill" id="attack-btn" aria-label="Slash attack"><kbd>Space</kbd><span>Moon Slash</span><i id="cd-attack"></i></button>
+          <button class="skill" id="nova-btn" aria-label="Cast Ember Nova"><kbd>Q</kbd><span>Ember Nova</span><i id="cd-nova"></i></button>
+          <button class="skill" id="dash-btn" aria-label="Use Rift Dash"><kbd>E</kbd><span>Rift Dash</span><i id="cd-dash"></i></button>
+          <button class="skill potion" id="potion-btn" aria-label="Drink potion"><kbd>R</kbd><span id="potion-label">Potion ×3</span><i id="cd-potion"></i></button>
+        </div>
+        <div id="boss-frame" class="hidden">
+          <span>Cinder Matriarch</span>
+          <div><b id="boss-fill"></b></div>
+        </div>
+        <div id="center-toast" class="show">
+          <h2>Original low-poly action RPG</h2>
+          <p>Move, carve through ember cultists, collect loot, and shatter the Ashen Crown.</p>
+        </div>
+      </section>
+      <div id="mobile-controls" aria-label="Mobile controls">
+        <div id="joystick"><span></span></div>
+        <div class="mobile-actions">
+          <button id="mobile-attack">Slash</button>
+          <button id="mobile-nova">Nova</button>
+          <button id="mobile-dash">Dash</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
